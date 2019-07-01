@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: "Lato", sans-serif;
+ 
+}
+
+.top {
+    display: block;
+    padding: 20px;
+    margin: 0px;
+    background-color: rgba(153, 0, 0,0.8);
+    
+}
+
+.select {
+    padding: 30px;
+    color: whitesmoke;
+    background-color: rgb(51, 51, 51);
+    margin-bottom: 0px;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    /*border: 1px solid #ccc;*/
+    background-color: rgb(13, 13, 13);
+    width: 20%;
+    height: 700px;
+}
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        display: block;
+        background-color: rgb(13, 13, 13);
+        color: white;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: darkred;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+            background-color: rgb(51, 51, 51);
+        }
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    /* border: 1px solid #ccc;*/
+    width: 80%;
+    border-left: none;
+    height: 700px;
+    background-image: url(./Images/bkg.jpg);
+    background-attachment: scroll;
+    background-color: rgba(38, 38, 38,0.95);
+    color: white;
+}
+
+.imgt {
+    padding: 30px;
+}
+
+    .imgt img {
+        margin: 40px 50px;
+        cursor: pointer;
+        padding: 0px;
+        border-radius: 5%;
+    }
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    clear: both;
+    margin: 0px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+    color: whitesmoke;
+}
