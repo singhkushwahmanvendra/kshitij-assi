@@ -3,6 +3,7 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Main from './Components/Main';
 import './index.css';
+import './ass.js';
 
 function openGenre(evt, genreName) {
     var i, tabcontent, tablinks;

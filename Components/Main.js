@@ -1,19 +1,6 @@
 import React from 'react';
 import '../index.css';
-
-function openGenre(evt, genreName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(genreName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+import openGenre from '../ass.js';
 
 class Main extends React.Component {
     componentDidMount() {
@@ -28,24 +15,24 @@ class Main extends React.Component {
                 <div id="genre" className="tabcontent imgt" >
                     <button onclick="openGenre(event, 'anime')"><img src="./Images/anime.jpg" alt='no1' /> </button>
 
-                    <button onclick="openGenre(event, 'Romance')">
-                        <img src="./Images/Romance.jpg" alt='no1' />
+                    <button onclick="openGenre(Event, 'Romance')">
+                        <img src="./Romance.jpg" alt='no1' />
                     </button>
 
-                    <button onclick="openGenre(event, 'Thriller')">
-                        <img src="./Images/Thriller.jpg" alt='no1' />
+                    <button onclick="openGenre(Event, 'Thriller')">
+                        <img src="./Thriller.jpg" alt='no1' />
                     </button>
 
-                    <button onclick="openGenre(event, 'Sci')">
-                        <img src="./Images/Sci.jpg" alt='no1' />
+                    <button onclick="openGenre(Event, 'Sci')">
+                        <img src="./Sci.jpg" alt='no1' />
                     </button>
 
-                    <button onclick="openGenre(event, 'Teen')">
-                        <img src="./Images/Drama.jpg" alt='no1' />
+                    <button onclick="openGenre(Event, 'Teen')">
+                        <img src="./Drama.jpg" alt='no1' />
                     </button>
 
-                    <button onclick="openGenre(event, 'Horror')">
-                        <img src="./Images/Horror.jpg" alt='no1' />
+                    <button onclick="openGenre(Event, 'Horror')">
+                        <img src="./Horror.jpg" alt='no1' />
                     </button>
 
                 </div>
