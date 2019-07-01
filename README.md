@@ -1,0 +1,4 @@
+# kshitij-assi
+
+I AM GETTING PROBLEM WITH JAVASCRIPT CODE FROM ASS.JS , 'GetElementById' is not working.
+SUGGEST SOMETHING.
